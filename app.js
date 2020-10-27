@@ -7,7 +7,7 @@ require("dotenv").config();
 app.use(cookieParser());
 app.use(express.json());
 
-mongoose.connect(proccess.env.DB_URI, {
+mongoose.connect(process.env.DB_URI, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
   useFindAndModify: false,
