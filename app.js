@@ -16,22 +16,6 @@ mongoose.connect(process.env.DB_URI, {
 const userRouter = require("./routes/User");
 app.use("/user", userRouter);
 
-// const User = require("./model/User");
-
-// const userInput = {
-//   username: "qwe",
-//   password: "123",
-//   role: "admin"
-// }
-
-// const user = new User(userInput);
-// user.save((err, document) => {
-//   if (err) {
-//     console.log(err)
-//   }
-//   console.log(document)
-// })
-
 app.listen(5000, () => {
   console.log("Express started")
 })
